@@ -77,9 +77,19 @@ class CharacterCmdset(default_cmds.Character_CmdSet):
 
 ```
 
-Then reload to make the bew commands available. Note that they only work
+Then reload to make the new commands available. Note that they only work
 on rooms with the typeclass `ExtendedRoom`. Create new rooms with the right
 typeclass or use the `typeclass` command to swap existing rooms.
+
+To create a room with the new typeclass:
+
+  `dig wardrobe : evennia.contrib.extended_room.ExtendedRoom`
+
+To change an existing room (in this example, object #176) from an old room type to the ExtendedRoom
+
+  `@type/reset/force #176 = evennia.contrib.extended_room.ExtendedRoom`
+
+
 
 """
 
